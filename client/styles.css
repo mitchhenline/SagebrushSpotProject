@@ -97,14 +97,21 @@ main {
 
 .plant-title {
     position: absolute;
-    font-size: 200%;
+    font-size: 180%;
     font-style: bold;
     top: 50px;
     right:25px;
 }
 
+.scientific-name {
+    position: absolute;
+    font-style: italic;
+    top: 120px;
+    right:25px;
+}
+
 .plant-type {
     position: absolute;
-    top: 120px;
+    top: 160px;
     right:25px;
 }
