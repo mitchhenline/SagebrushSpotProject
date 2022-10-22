@@ -1,11 +1,29 @@
 const plantBtn = document.getElementById("plantButton")
+const plantInfoBox = document.getElementById("plant-info-box")
 
 const getPlant = () => {
     axios.get("http://localhost:4000/api/plant/")
         .then(res => {
             const data = res.data;
-            alert(data);
+            console.log(data);
+
+            
     });
+};
+
+
+
+
+function createPlantCard(plant){
+    const plantCard = document.createElement('div')
+    plantCard.classList.add('plant-card')
+
+    plantCard.innerHTML = `<img alt="plant picture" src=${plant.imageURL} class="plant-picture"/>
+    <p class ="plant-title">${plant.title}</p>
+    <p class ="plant-type">${plant.type}</p>
+    </div>`
+
+    plantInfoBox.appendChild(plantCard)
 };
 
 plantBtn.addEventListener('click', getPlant)
