@@ -50,6 +50,7 @@ main {
 }
 
 #functioning-section {
+    
     display: flex;
     flex-wrap: wrap;
     height: 600px;
@@ -57,7 +58,24 @@ main {
     background-position: center;
 }
 
+#plantButton {
+    position: absolute;
+    top: 35px;
+    left: 80px;
+    border-width: 1px;
+    border-color: darkgray;
+    border-top: none;
+    border-left: none;
+    background-image: linear-gradient( rgb(255, 255, 255, .7), rgb(225, 225, 225 .9));
+
+}
+
+#button-text {
+    margin: 1px;
+}
+
 #query-box {
+    position: relative;
     height: 400px;
     width: 600px;
     padding-left: 25px;
@@ -66,4 +84,27 @@ main {
     background-image: linear-gradient( rgb(245, 245, 245, .7), rgb(255, 255, 255, .45));
     border-radius: 5%;
     background-position: center;
+    /* display: flex; */
+}
+
+.plant-picture {
+    position: absolute;
+    top: 80px;
+    height: 300px;
+    width: 250px;
+    border-radius: 10%;
+}
+
+.plant-title {
+    position: absolute;
+    font-size: 200%;
+    font-style: bold;
+    top: 50px;
+    right:25px;
+}
+
+.plant-type {
+    position: absolute;
+    top: 120px;
+    right:25px;
 }
