@@ -5,10 +5,8 @@ const getPlant = () => {
     axios.get("http://localhost:4000/api/plant/")
         .then(res => {
             const data = res.data;
-            console.log(data);
-
-            
-    });
+            createPlantCard(data)
+    })
 };
 
 
